@@ -1,0 +1,141 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+/* GENERAL STYLES */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+:root {
+    --color-red: hsl(0, 78%, 62%);
+    --color-cyan: hsl(180, 62%, 55%);
+    --color-orange: hsl(34, 97%, 64%);
+    --color-blue: hsl(212, 86%, 64%);
+
+    --color-dark-blue: hsl(234, 12%, 34%);
+    --color-grayish-blue: hsl(229, 6%, 66%);
+    --color-light-gray: hsl(0, 0%, 98%);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-light-gray);
+}
+
+main {
+    width: 100%;
+    height: 100vh;
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24px;
+}
+
+h1, h2 {
+    color: var(--color-dark-blue);
+}
+
+p {
+    color: var(--color-grayish-blue);
+}
+
+/* TITLE AREA */
+
+#header {
+    text-align: center;
+    max-width: 500px;
+    padding: 8px;
+}
+
+#header .light-title {
+    font-weight: 200;
+}
+
+/* FEATURES AREA */
+
+#features {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px;
+}
+
+#features .vertical-features {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.feature {
+    border-top: 5px solid;
+    background-color: #FFF;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 32px;
+    max-width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    transition: background 0.3s;
+}
+
+.feature:hover {
+    background-color: #EEE;
+}
+
+.feature img {
+    width: 70px;
+    align-self: flex-end;
+    transition: transform 0.7s;
+}
+
+.feature:hover img {
+    transform: rotate(360deg);
+}
+
+.feature p {
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+#supervisor.feature{
+    border-color: var(--color-cyan);
+    margin-right: 16px;
+}
+
+#features .vertical-features div:nth-child(1) {
+    border-color: var(--color-red);
+    margin-bottom: 12px;
+}
+
+#features .vertical-features div:nth-child(2) {
+    border-color: var(--color-orange);
+    margin-bottom: 24px;
+}
+
+#calculator.feature{
+    border-color: var(--color-blue);
+    margin-left: 16px;
+}
+
+/* FOOTER */
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
+
