@@ -1,0 +1,171 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Karla', sans-serif;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    background-color: var(--color-grayish-blue);
+}
+
+:root {
+    --color-cyan: hsl(179, 62%, 43%);
+    --color-b-yellow: hsl(71, 73%, 54%);
+    --color-light-gray: hsl(204, 43%, 93%);
+    --color-grayish-blue: hsl(218, 22%, 67%);
+} 
+
+h2 {
+    font-size: 1.5rem;
+    color: var(--color-cyan);
+}
+
+h3 {
+    font-size: 1.2rem;
+    color: var(--color-light-gray);
+}
+
+#card {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    min-width: 500px;
+    height: 550px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    flex-wrap: wrap;
+}
+
+/* FIRST PART OF THE CARD */
+
+#card #description {
+    background-color: var(--color-light-gray);
+    height: 50%;
+    width: 100%;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    border-radius: 12px 12px 0 0;
+}
+
+#card #description h3 {
+    color: var(--color-b-yellow);
+}
+
+#card #description p {
+    color: var(--color-grayish-blue);
+    font-weight: bold;
+    margin-bottom: 16px;
+}
+
+/* SECOND PART OF THE CARD */
+
+.belowLine {
+    height: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+    /* FIRST PART OF THE BOTTOM LINE */
+
+/* MAIN AREA */
+.belowLine #mainArea {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--color-cyan);
+    border-radius: 0 0 0 12px;
+}
+
+.belowLine #mainArea #price {
+    display: flex;
+    align-items: baseline;
+}
+
+.belowLine #mainArea #price h1 {
+    color: white;
+}
+
+.belowLine #mainArea #price span {
+    margin-left: 8px;
+    color: var(--color-light-gray);
+    opacity: 0.8;
+    font-size: 1.1rem;
+}
+
+.belowLine #mainArea p {
+    font-size: 1.1rem;
+    color: var(--color-light-gray);
+}
+
+.belowLine #mainArea a {
+    display: block;
+    width: 85%;
+    padding: 16px;
+    align-self: center;
+    text-align: center;
+    color: white;
+    background-color: var(--color-b-yellow);
+    font-weight: bold;
+    font-size: 1.4rem;
+    border-radius: 6px;
+    box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.3);
+    transition: filter 0.15s;
+}
+
+.belowLine #mainArea a:hover {
+    filter: brightness(0.95);
+}
+
+.belowLine #mainArea a:active {
+    filter: brightness(0.85);
+}
+
+/* WHY US AREA */
+
+.belowLine #whyUs {
+    height: 100%;
+    width: 50%;
+    padding: 20px;
+    background: var(--color-cyan);
+    opacity: 0.8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 0 0 12px 0;
+}
+
+.belowLine #whyUs ul {
+    padding: 8px 0;
+    margin-bottom: 16px;
+    color: var(--color-light-gray);
+}
+
+footer {
+    font-size: 1rem;
+    position: absolute;
+    bottom: 20px;
+}
+
+footer a {
+    color: hsl(228, 45%, 44%);
+}
