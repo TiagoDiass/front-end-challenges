@@ -69,15 +69,16 @@ p {
 #features {
     width: 100%;
     height: 100%;
-    
+    margin-bottom: 32px;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50% 50%;
-    padding: 12px;
-    justify-items: center;
-    justify-content: center;
+    grid-template-columns: repeat(3, 33%);
+    grid-template-rows: repeat(4, 25%);
     grid-column-gap: 12px;
     grid-row-gap: 12px;
+    justify-items: center;
+    justify-content: center;
+    padding: 12px;
 }
 
 .feature {
@@ -116,28 +117,28 @@ p {
     border-color: var(--color-cyan);
 
     grid-column: 1/2;
-    grid-row: 1/3;
+    grid-row: 2/4;
 }
 
 #teambuilder.feature {
     border-color: var(--color-red);
 
     grid-column: 2/3;
-    grid-row: 1/2;
+    grid-row: 1/3;
 }
 
 #karma.feature {
     border-color: var(--color-orange);
 
     grid-column: 2/3;
-    grid-row: 2/3;
+    grid-row: 3/5;
 }
 
 #calculator.feature{
     border-color: var(--color-blue);
 
     grid-column: 3/4;
-    grid-row: 1/3;
+    grid-row: 2/4;
 }
 
 /* FOOTER */
