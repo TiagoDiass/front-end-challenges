@@ -1,0 +1,102 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    background: url(images/bg-desktop.svg);
+}
+
+section.main {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(103, 75, 175, 0.75);
+
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 65% 15%;
+    grid-row-gap: 12px;
+    padding: 32px;
+}
+
+.main .logo {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+.main .main-content {
+    grid-column: 1/2;
+    grid-row: 2/3;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .main-content .description {
+    padding: 20px;
+    align-self: flex-start;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+.main .main-content .description h1 {
+    color: white;
+    font-size: 2.95rem;
+    font-weight: 600;
+    margin-left: 26px;
+}
+
+.main .main-content .description p {
+    color: white;
+    font-size: 1.1rem;
+    margin-left: 26px;
+}
+
+.main .main-content .description a {
+    display: block;
+    padding: 20px;
+    margin-left: 26px;
+    text-align: center;
+    border-radius: 50px;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+    width: 40%;
+    background-color: #fff;
+    color: rgb(103, 75, 175);
+    font-size: 1.4rem;
+    font-weight: bold;
+    transition: filter 0.2s;
+}
+
+.main .main-content .description a:hover {
+    filter: brightness(0.95);
+}
+
+.main .main-content .description a:active {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+}
