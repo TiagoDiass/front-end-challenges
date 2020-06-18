@@ -31,72 +31,82 @@ section.main {
     height: 100%;
     width: 100%;
     background-color: rgba(103, 75, 175, 0.75);
-
-    display: grid;
-    grid-template-columns: 100%;
-    grid-template-rows: 15% 65% 15%;
-    grid-row-gap: 12px;
     padding: 32px;
-}
-
-.main .logo {
-    grid-column: 1/2;
-    grid-row: 1/2;
-}
-
-.main .main-content {
-    grid-column: 1/2;
-    grid-row: 2/3;
-
 
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     align-items: center;
 }
 
-.main .main-content .description {
-    padding: 20px;
+section.main .logo {
     align-self: flex-start;
-    height: 100%;
+}
 
+section.main .main-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+section.main .main-content .description {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items: flex-start;
+    padding: 36px;
+    height: 80%;
 }
 
-.main .main-content .description h1 {
+section.main .main-content .description h1 {
+    color: #FFF;
+    font-size: 2.8rem;
+}
+
+section.main .main-content .description p {
     color: white;
-    font-size: 2.95rem;
-    font-weight: 600;
-    margin-left: 26px;
 }
 
-.main .main-content .description p {
-    color: white;
-    font-size: 1.1rem;
-    margin-left: 26px;
-}
-
-.main .main-content .description a {
+section.main .main-content .description a {
     display: block;
-    padding: 20px;
-    margin-left: 26px;
-    text-align: center;
-    border-radius: 50px;
-    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
-    width: 40%;
-    background-color: #fff;
+    background-color: #FFF;
     color: rgb(103, 75, 175);
-    font-size: 1.4rem;
+    width: 45%;
+    padding: 22px;
+    border-radius: 30px;
+    text-align: center;
+    font-size: 1.3rem;
+    box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);
+
+    transition: filter 0.15s;
+}
+
+section.main .main-content .description a:hover {
+    filter: brightness(0.92);
+}
+
+section.main .main-content .description a:active {
+    filter: brightness(0.88);
+}
+
+section.main .social-media {
+    padding: 16px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    align-self: flex-end;
+    width: 15%;
+    margin-top: -30px;
+}
+
+section.main .social-media .icon {
+    color: #FFF;
+    width: 25%;
+    border: 2px solid white;
+    padding: 12px;
+    border-radius: 22px;
     font-weight: bold;
-    transition: filter 0.2s;
+    text-align: center;
 }
 
-.main .main-content .description a:hover {
-    filter: brightness(0.95);
-}
-
-.main .main-content .description a:active {
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+footer {
+    background-color: rgba(103, 75, 175, 0.75);
 }
