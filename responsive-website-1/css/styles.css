@@ -22,7 +22,7 @@ header {
 
 header .logo {
   color: #fff;
-  font-size: 30px;
+  font-size: 36px;
   text-decoration: none;
   letter-spacing: 2px;
   font-weight: 700;
@@ -59,6 +59,7 @@ header ul li a:hover {
 }
 
 section {
+  background-color: #FDFDFD;
   position: relative;
   display: flex;
   justify-content: space-between;
@@ -104,6 +105,102 @@ section:nth-child(odd) {
   align-items: center;
   background-color: #111;
   color: #fff;
+}
+
+section#services {
+  padding: 80px 100px 100px;
+}
+
+.services-container {
+  margin-top: 28px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.services-container .serviceBox {
+  border-radius: 4px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 31%;
+  min-height: 250px;
+  background-color: #111;
+  padding: 16px 0;
+  color: #FDFDFD;
+
+  transition: box-shadow 0.2s ease;
+}
+
+.services-container .serviceBox:hover {
+  box-shadow: 0 0 14px rgba(0, 0, 0, 0.5);
+}
+
+.services-container .serviceBox h3 {
+  font-size: 5rem;
+}
+
+.form form {
+  height: 400px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form form .form-input {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin-top: 16px;
+}
+
+.form form .form-input label {
+  margin-bottom: 6px;
+}
+
+.form form .form-input input {
+  padding: 8px 4px;
+  border: none;
+  outline: none;
+
+  transition: box-shadow 0.15s;
+}
+
+.form form .form-input textarea {
+  outline: none;
+  transition: box-shadow 0.15s;
+  resize: none;
+}
+
+.form form button {
+  margin-top: 16px;
+  padding: 12px 6px;
+  border: 1px solid #FDFDFD;
+  background-color: transparent;
+  color: #FFF;
+  font-size: 1.12rem;
+
+  transition: background 0.2s, color 0.2s;
+}
+
+.form form button:hover {
+  background-color: #FDFDFD;
+  color: #111;
+  cursor: pointer;
+}
+
+.form form button:active {
+  outline: none;
+  box-shadow: 0 0 6px rgba(255, 255, 255, 0.4);
+}
+
+.form form .form-input textarea:hover,
+.form form .form-input textarea:focus,
+.form form .form-input input:hover,
+.form form .form-input input:focus {
+  box-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
 }
 
 @media (max-width: 992px) {
@@ -188,5 +285,18 @@ section:nth-child(odd) {
   header.active .toggle::after {
     bottom: 14px;
     transform: rotate(-45deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .services-container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .services-container .serviceBox {
+    width: 100%;
+    margin-top: 12px;
   }
 }

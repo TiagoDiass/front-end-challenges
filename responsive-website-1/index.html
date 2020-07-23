@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+        integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous" />
     <title>Responsive Website</title>
 </head>
 
@@ -59,11 +61,35 @@
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor commodi consequuntur. Voluptates
                 ullam eligendi nemo dolores debitis, vel odit quod repudiandae illo. Deserunt sit dolore minus neque
-                tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor commodi consequuntur.
-                ullam eligendi nemo dolores debitis, vel odit quod repudiandae illo. Deserunt sit dolore minus neque
-                tempore! ullam eligendi nemo dolores debitis, vel odit quod repudiandae illo. Deserunt sit dolore minus
-                neque
+                tempore!
             </p>
+
+            <div class="services-container">
+                <div class="serviceBox">
+                    <h3>
+                        <i class="fas fa-pen-nib"></i>
+                    </h3>
+                    <p class="service-description">
+                        Responsive Design
+                    </p>
+                </div>
+                <div class="serviceBox">
+                    <h3>
+                        <i class="fas fa-laptop-code"></i>
+                    </h3>
+                    <p class="service-description">
+                        Development
+                    </p>
+                </div>
+                <div class="serviceBox">
+                    <h3>
+                        <i class="fas fa-microscope"></i>
+                    </h3>
+                    <p class="service-description">
+                        Deep Analysis
+                    </p>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -98,14 +124,27 @@
     <section id="contact">
         <div>
             <h2>Contact Us</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor commodi consequuntur. Voluptates
-                ullam eligendi nemo dolores debitis, vel odit quod repudiandae illo. Deserunt sit dolore minus neque
-                tempore! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod dolor commodi consequuntur.
-                ullam eligendi nemo dolores debitis, vel odit quod repudiandae illo. Deserunt sit dolore minus neque
-                tempore! ullam eligendi nemo dolores debitis, vel odit quod repudiandae illo. Deserunt sit dolore minus
-                neque
-            </p>
+            <p>Feel free to send us your e-mail</p>
+            <div class="form">
+                <form>
+                    <div class="form-input">
+                        <label for="name">Name</label>
+                        <input type="text" id="name">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="email">E-mail</label>
+                        <input type="text" id="email">
+                    </div>
+
+                    <div class="form-input">
+                        <label for="text">Your Message</label>
+                        <textarea id="text" cols="30" rows="5"></textarea>
+                    </div>
+
+                    <button>SEND MESSAGE</button>
+                </form>
+            </div>
         </div>
     </section>
 
