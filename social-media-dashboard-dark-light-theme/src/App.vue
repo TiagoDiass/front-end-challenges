@@ -1,16 +1,20 @@
 <template>
   <div id="app">
-    <h1>
-      Manoooo
-    </h1>
+    <DashboardHeader />
 
-    <h2>Eu precisooo</h2>
+    <OverviewCards />
   </div>
 </template>
 
 <script>
+import DashboardHeader from './components/DashboardHeader';
+import OverviewCards from './components/OverviewCards';
+
 export default {
   name: 'App',
-  components: {},
+  components: {
+    DashboardHeader,
+    OverviewCards,
+  },
 };
 </script>
