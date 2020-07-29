@@ -16,9 +16,30 @@ export default {
     StatisticCard,
   },
 
+  methods: {
+    createStats(title, socialMedia, number, profit, profitPercent) {
+      return {
+        title,
+        socialMedia,
+        number,
+        profit,
+        profitPercent,
+      };
+    },
+  },
+
   computed: {
     statistics() {
-      return [{}];
+      return [
+        this.createStats('Page Views', 'facebook', 87, true, 3),
+        this.createStats('Likes', 'facebook', 52, false, 2),
+        this.createStats('Likes', 'instagram', 5462, true, 2257),
+        this.createStats('Profile Views', 'instagram', '52k', true, 2257),
+        this.createStats('Retweets', 'twitter', 117, true, 302),
+        this.createStats('Likes', 'twitter', 507, true, 553),
+        this.createStats('Likes', 'youtube', 107, false, 19),
+        this.createStats('Total Views', 'youtube', 1407, false, 9),
+      ];
     },
   },
 };
