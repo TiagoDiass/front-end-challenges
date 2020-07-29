@@ -63,6 +63,13 @@ body {
     align-items: center;
     background-color: $light-grayish-blue;
 
+    &.instagram-border {
+      border-top: 4px solid;
+      border-image-slice: 1;
+      border-width: 4px;
+      border-image-source: linear-gradient(to left, #fdc468, #df4996);
+    }
+
     .card-top {
       display: flex;
       align-items: center;
@@ -82,7 +89,7 @@ body {
         color: $dark-blue;
         font-size: 50px;
         text-align: center;
-        margin-top: 9px;
+        margin-top: 18px;
       }
 
       h3 {
@@ -96,7 +103,7 @@ body {
     }
 
     .card-footer {
-      margin-top: 10px;
+      margin-top: 18px;
       display: flex;
       align-items: center;
 
@@ -113,6 +120,16 @@ body {
       p.no-profit {
         color: $red;
       }
+    }
+  }
+
+  .statistics {
+    margin-top: 46px;
+    border: 1px solid red;
+
+    .statistics-title {
+      font-size: 20px;
+      color: $dark-grayish-blue;
     }
   }
 }
