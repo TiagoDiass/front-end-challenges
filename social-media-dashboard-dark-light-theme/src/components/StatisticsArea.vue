@@ -2,7 +2,7 @@
   <section class="statistics">
     <h2 class="statistics-title">Overview - Today</h2>
 
-    <div class="stats-cards-grid">
+    <div class="stats-cards-flex">
       <StatisticCard v-for="(stats, index) in statistics" :key="index" :data="stats" />
     </div>
   </section>

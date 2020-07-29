@@ -63,6 +63,12 @@ body {
     align-items: center;
     background-color: $light-grayish-blue;
 
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    }
+
     &.instagram-border {
       border-top: 4px solid;
       border-image-slice: 1;
@@ -125,15 +131,83 @@ body {
 
   .statistics {
     margin-top: 46px;
-    border: 1px solid red;
 
     .statistics-title {
       font-size: 20px;
       color: $dark-grayish-blue;
     }
 
-    .stats-card-grid {
-      border: 1px solid blue;
+    .stats-cards-flex {
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  .statistic-card {
+    background-color: $light-grayish-blue;
+    width: 23%;
+    margin-top: 16px;
+    padding: 20px;
+
+    display: grid;
+    grid-row: 50% 50%;
+    grid-template-columns: 50% 50%;
+    grid-row-gap: 6px;
+
+    transition: box-shadow 0.2s;
+
+    &:hover {
+      box-shadow: 0 0 10px rgba($color: #000000, $alpha: 0.3);
+    }
+
+    h2.stat-title {
+      grid-row: 1/2;
+      grid-column: 1/2;
+
+      font-size: 14px;
+      color: $dark-grayish-blue;
+    }
+
+    img {
+      grid-row: 1/2;
+      grid-column: 2/3;
+      justify-self: end;
+    }
+
+    h2.stat-big-number {
+      grid-row: 2/3;
+      grid-column: 1/2;
+
+      align-self: end;
+
+      font-weight: bold;
+      font-size: 30px;
+    }
+
+    div.stat-percent {
+      grid-row: 2/3;
+      grid-column: 2/3;
+      justify-self: end;
+
+      display: flex;
+      align-items: flex-end;
+
+      img {
+        margin-bottom: 4px;
+        margin-right: 6px;
+      }
+
+      p {
+        font-size: 10px;
+        font-weight: bold;
+        color: $green;
+      }
+
+      p.no-profit {
+        color: $red;
+      }
     }
   }
 }
