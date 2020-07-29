@@ -23,6 +23,7 @@ export default {
   methods: {
     changeTheme() {
       document.querySelector('#app').classList.toggle('dark-mode');
+      document.body.classList.toggle('dark-mode');
     },
   },
 };

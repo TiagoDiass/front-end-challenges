@@ -26,14 +26,21 @@ html,
 body {
   height: 100vh;
   width: 100%;
-  background-color: #CCC;
+}
+
+body {
+  background-color: $white;
+  transition: background 0.15s linear;
+}
+
+body.dark-mode {
+  background-color: $dark-blue;
 }
 
 #app {
   margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: $white;
-  height: 100%;
   width: 100%;
   padding: 30px 100px;
   transition: background 0.15s linear;
@@ -119,6 +126,7 @@ body {
     margin-top: 26px;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .overview-card {
@@ -292,6 +300,64 @@ body {
       h4 {
         color: $light-grayish-blue;
       }
+
+      .header-small-row h5 {
+        color: $light-grayish-blue;
+      }
+    }
+
+    .overview-card {
+      background-color: $desatured-blue;
+
+      .card-body h2 {
+        color: $white;
+      }
+    }
+
+    .statistics .statistics-title {
+      color: $light-grayish-blue;
+    }
+
+    .statistic-card {
+      background-color: $desatured-blue;
+
+      h2.stat-big-number {
+        color: $white;
+      }
+    }
+
+    .overview-card:hover,
+    .statistic-card:hover {
+      box-shadow: 0 0 10px rgba($color: $white, $alpha: 0.3);
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  #app {
+    .overview-card {
+      width: 48%;
+      margin-top: 12px;
+    }
+
+    .statistic-card {
+      width: 48%;
+    }
+  }
+}
+
+@media (max-width: 662px) {
+
+  #app {
+    padding: 30px;
+
+    .overview-card {
+      width: 100%;
+      margin-top: 12px;
+    }
+
+    .statistic-card {
+      width: 100%;
     }
   }
 }
