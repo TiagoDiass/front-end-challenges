@@ -11,6 +11,11 @@ $light-grayish-blue: hsl(227, 47%, 96%);
 $dark-grayish-blue: hsl(228, 12%, 44%);
 $dark-blue: hsl(230, 17%, 14%);
 
+// Dark Theme
+$very-dark-blue: hsl(230, 17%, 14%);
+$very-dark-blue2: hsl(232, 19%, 15%);
+$desatured-blue: hsl(228, 28%, 20%);
+
 * {
   padding: 0;
   margin: 0;
@@ -19,18 +24,23 @@ $dark-blue: hsl(230, 17%, 14%);
 
 html,
 body {
-  height: 100%;
+  height: 100vh;
   width: 100%;
-  display: flex;
-  justify-content: center;
+  background-color: #CCC;
 }
 
 #app {
+  margin: 0;
   font-family: 'Inter', sans-serif;
   background-color: $white;
-  margin-top: 32px;
   height: 100%;
-  width: 87%;
+  width: 100%;
+  padding: 30px 100px;
+  transition: background 0.15s linear;
+
+  * {
+    transition: all 0.15s;
+  }
 
   h1 {
     color: $dark-blue;
@@ -43,6 +53,65 @@ body {
       margin-top: 4px;
       font-size: 0.78rem;
       opacity: 0.5;
+    }
+
+    .header-small-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+
+      .theme-switcher {
+        display: flex;
+        align-items: center;
+
+        h5 {
+          margin-right: 5px;
+          font-size: 12px;
+          color: $dark-grayish-blue;
+        }
+
+        .checkbox {
+          opacity: 0;
+          position: absolute;
+        }
+
+        .checkbox:checked+.label {
+          background-color: $green;
+        }
+
+        .checkbox:checked+.label .ball {
+          transform: translateX(12px);
+          background-color: $very-dark-blue;
+        }
+
+        .label {
+          width: 28px;
+          height: 15px;
+          background-color: rgba($color: $dark-grayish-blue, $alpha: 0.6);
+          display: flex;
+          align-items: center;
+          padding: 5px;
+          justify-content: space-between;
+          border-radius: 50px;
+          position: relative;
+
+          transition: background 0.2s;
+          cursor: pointer;
+        }
+
+        .ball {
+          width: 12px;
+          height: 11px;
+          background-color: #fff;
+          position: absolute;
+          top: 2px;
+          left: 2px;
+          border-radius: 50%;
+
+          transition: transform 0.2s, background 0.2s;
+        }
+      }
     }
   }
 
@@ -208,6 +277,20 @@ body {
 
       p.no-profit {
         color: $red;
+      }
+    }
+  }
+
+  &.dark-mode {
+    background-color: $very-dark-blue;
+
+    h1 {
+      color: $white;
+    }
+
+    header {
+      h4 {
+        color: $light-grayish-blue;
       }
     }
   }
