@@ -147,6 +147,7 @@ body {
 
   .statistic-card {
     background-color: $light-grayish-blue;
+    border-radius: 5px;
     width: 23%;
     margin-top: 16px;
     padding: 20px;
@@ -154,7 +155,7 @@ body {
     display: grid;
     grid-row: 50% 50%;
     grid-template-columns: 50% 50%;
-    grid-row-gap: 6px;
+    grid-row-gap: 20px;
 
     transition: box-shadow 0.2s;
 
