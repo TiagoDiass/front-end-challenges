@@ -10,10 +10,10 @@ export const MainWrapper = styled.section`
 `;
 
 export const TestimonialsWrapper = styled.main`
-  border: 1px solid black;
   width: 70%;
   height: 70%;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
+  grid-gap: 1.4rem;
 `;

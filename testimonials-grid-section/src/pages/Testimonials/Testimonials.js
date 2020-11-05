@@ -1,12 +1,15 @@
 import React from 'react';
-
+import TestimonialsData from './Testimonials.data';
 import { MainWrapper, TestimonialsWrapper } from './Testimonials.styles';
+import { TestimonialBlock } from '../../components';
 
 const Testimonials = () => {
   return (
     <MainWrapper>
       <TestimonialsWrapper>
-        <h1>HEY BR</h1>
+        {TestimonialsData.map((testimonial, index) => (
+          <TestimonialBlock {...testimonial} key={index} />
+        ))}
       </TestimonialsWrapper>
     </MainWrapper>
   );
