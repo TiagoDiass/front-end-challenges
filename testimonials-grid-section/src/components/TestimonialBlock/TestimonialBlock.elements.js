@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const TestimonialWrapper = styled.article`
   grid-column: ${({ gridColumn }) => gridColumn};
@@ -39,6 +39,19 @@ export const AuthorSubtitle = styled.p`
   color: var(--light-gray);
 `;
 
-export const TestimonialSubtitle = styled.h5``;
+export const TestimonialTextWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+  margin-top: 1rem;
+`;
+
+export const TestimonialTitle = styled.h5`
+  font-size: 1.35rem;
+  letter-spacing: 1.2px;
+  font-weight: 600;
+  color: ${({ lightText }) =>
+    lightText ? 'var(--white)' : 'var(--grayish-blue)'};
+`;
 
 export const TestimonialText = styled.p``;

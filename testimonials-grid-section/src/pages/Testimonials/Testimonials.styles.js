@@ -1,7 +1,7 @@
-import styled from 'styled-components';
+import styled from 'styled-components/macro';
 
 export const MainWrapper = styled.section`
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
   background-color: var(--light-blue);
   display: flex;
@@ -12,6 +12,7 @@ export const MainWrapper = styled.section`
 export const TestimonialsWrapper = styled.main`
   width: 70%;
   height: 70%;
+  min-height: 600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);

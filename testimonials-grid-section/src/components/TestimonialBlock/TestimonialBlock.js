@@ -6,6 +6,9 @@ import {
   AuthorNameAndSubtitleWrapper,
   AuthorName,
   AuthorSubtitle,
+  TestimonialTextWrapper,
+  TestimonialTitle,
+  TestimonialText,
 } from './TestimonialBlock.elements';
 
 const TestimonialBlock = ({
@@ -33,6 +36,13 @@ const TestimonialBlock = ({
           <AuthorSubtitle>{author.subtitle}</AuthorSubtitle>
         </AuthorNameAndSubtitleWrapper>
       </AuthorRow>
+
+      <TestimonialTextWrapper>
+        <TestimonialTitle lightText={lightText}>
+          {testimonial.title}
+        </TestimonialTitle>
+        <TestimonialText>{testimonial.text}</TestimonialText>
+      </TestimonialTextWrapper>
     </TestimonialWrapper>
   );
 };
