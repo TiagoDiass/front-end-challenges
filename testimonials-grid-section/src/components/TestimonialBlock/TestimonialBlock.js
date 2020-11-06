@@ -41,7 +41,9 @@ const TestimonialBlock = ({
         <TestimonialTitle lightText={lightText}>
           {testimonial.title}
         </TestimonialTitle>
-        <TestimonialText>{testimonial.text}</TestimonialText>
+        <TestimonialText lightText={lightText}>
+          {testimonial.text}
+        </TestimonialText>
       </TestimonialTextWrapper>
     </TestimonialWrapper>
   );

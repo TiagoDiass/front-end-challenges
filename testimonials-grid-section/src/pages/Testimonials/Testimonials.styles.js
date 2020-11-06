@@ -10,11 +10,15 @@ export const MainWrapper = styled.section`
 `;
 
 export const TestimonialsWrapper = styled.main`
-  width: 70%;
+  width: 1000px;
   height: 70%;
   min-height: 600px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: repeat(2, 1fr);
   grid-gap: 1.4rem;
+
+  @media (max-width: 1050px) {
+    padding: 0 1rem;
+  }
 `;

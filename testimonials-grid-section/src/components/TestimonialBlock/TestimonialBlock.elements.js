@@ -54,4 +54,11 @@ export const TestimonialTitle = styled.h5`
     lightText ? 'var(--white)' : 'var(--grayish-blue)'};
 `;
 
-export const TestimonialText = styled.p``;
+export const TestimonialText = styled.p`
+  margin-top: 1.2rem;
+  letter-spacing: 0.8px;
+  color: ${({ lightText }) =>
+    lightText ? 'var(--white)' : 'var(--grayish-blue)'};
+  opacity: 0.7;
+  font-size: 1.1rem;
+`;
