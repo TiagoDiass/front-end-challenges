@@ -7,6 +7,10 @@ export const TestimonialWrapper = styled.article`
   border-radius: 0.7rem;
   box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.15);
   padding: 1.6rem;
+
+  @media (max-width: 950px) {
+    width: 100%;
+  }
 `;
 
 export const AuthorRow = styled.div`
