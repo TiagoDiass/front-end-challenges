@@ -1,7 +1,8 @@
 const testimonials = [
   {
     author: {
-      imagePath: '/images/image-daniel.jpg',
+      imagePath:
+        '/front-end-challenges/testimonials-grid-section/public/images/image-daniel.jpg',
       name: 'Daniel Clifford',
       subtitle: 'Verified Graduated',
     },
@@ -25,7 +26,8 @@ const testimonials = [
   },
   {
     author: {
-      imagePath: '/images/image-jonathan.jpg',
+      imagePath:
+        '/front-end-challenges/testimonials-grid-section/public/images/image-jonathan.jpg',
       name: 'Jonathan Walters',
       subtitle: 'Verified Graduated',
     },
@@ -45,7 +47,8 @@ const testimonials = [
   },
   {
     author: {
-      imagePath: '/images/image-kira.jpg',
+      imagePath:
+        '/front-end-challenges/testimonials-grid-section/public/images/image-kira.jpg',
       name: 'Kira Whittle',
       subtitle: 'Verified Graduated',
     },
@@ -71,7 +74,8 @@ const testimonials = [
   },
   {
     author: {
-      imagePath: '/images/image-jeanette.jpg',
+      imagePath:
+        '/front-end-challenges/testimonials-grid-section/public/images/image-jeanette.jpg',
       name: 'Jeanette Harmon',
       subtitle: 'Verified Graduated',
     },
@@ -91,7 +95,8 @@ const testimonials = [
   },
   {
     author: {
-      imagePath: '/images/image-patrick.jpg',
+      imagePath:
+        '/front-end-challenges/testimonials-grid-section/public/images/image-patrick.jpg',
       name: 'Patrick Abrams',
       subtitle: 'Verified Graduated',
     },
