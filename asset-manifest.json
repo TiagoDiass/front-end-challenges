@@ -1,23 +1,17 @@
 {
   "files": {
-    "main.js": "/front-end-challenges/react-landing-page/build/static/js/main.a6cab11b.chunk.js",
-    "main.js.map": "/front-end-challenges/react-landing-page/build/static/js/main.a6cab11b.chunk.js.map",
-    "runtime-main.js": "/front-end-challenges/react-landing-page/build/static/js/runtime-main.2123e19b.js",
-    "runtime-main.js.map": "/front-end-challenges/react-landing-page/build/static/js/runtime-main.2123e19b.js.map",
-    "static/js/2.550b6830.chunk.js": "/front-end-challenges/react-landing-page/build/static/js/2.550b6830.chunk.js",
-    "static/js/2.550b6830.chunk.js.map": "/front-end-challenges/react-landing-page/build/static/js/2.550b6830.chunk.js.map",
-    "index.html": "/front-end-challenges/react-landing-page/build/index.html",
-    "precache-manifest.318a7076dd04f45a2a8b6ff5d4fe2b1d.js": "/front-end-challenges/react-landing-page/build/precache-manifest.318a7076dd04f45a2a8b6ff5d4fe2b1d.js",
-    "service-worker.js": "/front-end-challenges/react-landing-page/build/service-worker.js",
-    "static/js/2.550b6830.chunk.js.LICENSE.txt": "/front-end-challenges/react-landing-page/build/static/js/2.550b6830.chunk.js.LICENSE.txt",
-    "static/media/profile.jpg": "/front-end-challenges/react-landing-page/build/static/media/profile.79ba2002.jpg",
-    "static/media/svg-1.svg": "/front-end-challenges/react-landing-page/build/static/media/svg-1.55cfb481.svg",
-    "static/media/svg-2.svg": "/front-end-challenges/react-landing-page/build/static/media/svg-2.d4846e11.svg",
-    "static/media/svg-3.svg": "/front-end-challenges/react-landing-page/build/static/media/svg-3.397c455a.svg"
+    "main.js": "/front-end-challenges/testimonials-grid-section/build/static/js/main.f4ecfd14.chunk.js",
+    "main.js.map": "/front-end-challenges/testimonials-grid-section/build/static/js/main.f4ecfd14.chunk.js.map",
+    "runtime-main.js": "/front-end-challenges/testimonials-grid-section/build/static/js/runtime-main.aed0c9d6.js",
+    "runtime-main.js.map": "/front-end-challenges/testimonials-grid-section/build/static/js/runtime-main.aed0c9d6.js.map",
+    "static/js/2.c72a28e3.chunk.js": "/front-end-challenges/testimonials-grid-section/build/static/js/2.c72a28e3.chunk.js",
+    "static/js/2.c72a28e3.chunk.js.map": "/front-end-challenges/testimonials-grid-section/build/static/js/2.c72a28e3.chunk.js.map",
+    "index.html": "/front-end-challenges/testimonials-grid-section/build/index.html",
+    "static/js/2.c72a28e3.chunk.js.LICENSE.txt": "/front-end-challenges/testimonials-grid-section/build/static/js/2.c72a28e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.2123e19b.js",
-    "static/js/2.550b6830.chunk.js",
-    "static/js/main.a6cab11b.chunk.js"
+    "static/js/runtime-main.aed0c9d6.js",
+    "static/js/2.c72a28e3.chunk.js",
+    "static/js/main.f4ecfd14.chunk.js"
   ]
 }
