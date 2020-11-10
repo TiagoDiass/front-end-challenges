@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.js": "/static/js/main.f4ecfd14.chunk.js",
-    "main.js.map": "/static/js/main.f4ecfd14.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.a552753a.js",
-    "runtime-main.js.map": "/static/js/runtime-main.a552753a.js.map",
-    "static/js/2.ebd76d58.chunk.js": "/static/js/2.ebd76d58.chunk.js",
-    "static/js/2.ebd76d58.chunk.js.map": "/static/js/2.ebd76d58.chunk.js.map",
-    "index.html": "/index.html",
-    "static/js/2.ebd76d58.chunk.js.LICENSE.txt": "/static/js/2.ebd76d58.chunk.js.LICENSE.txt"
+    "main.js": "/front-end-challenges/testimonials-grid-section/build/static/js/main.f4ecfd14.chunk.js",
+    "main.js.map": "/front-end-challenges/testimonials-grid-section/build/static/js/main.f4ecfd14.chunk.js.map",
+    "runtime-main.js": "/front-end-challenges/testimonials-grid-section/build/static/js/runtime-main.aed0c9d6.js",
+    "runtime-main.js.map": "/front-end-challenges/testimonials-grid-section/build/static/js/runtime-main.aed0c9d6.js.map",
+    "static/js/2.c72a28e3.chunk.js": "/front-end-challenges/testimonials-grid-section/build/static/js/2.c72a28e3.chunk.js",
+    "static/js/2.c72a28e3.chunk.js.map": "/front-end-challenges/testimonials-grid-section/build/static/js/2.c72a28e3.chunk.js.map",
+    "index.html": "/front-end-challenges/testimonials-grid-section/build/index.html",
+    "static/js/2.c72a28e3.chunk.js.LICENSE.txt": "/front-end-challenges/testimonials-grid-section/build/static/js/2.c72a28e3.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.a552753a.js",
-    "static/js/2.ebd76d58.chunk.js",
+    "static/js/runtime-main.aed0c9d6.js",
+    "static/js/2.c72a28e3.chunk.js",
     "static/js/main.f4ecfd14.chunk.js"
   ]
 }
