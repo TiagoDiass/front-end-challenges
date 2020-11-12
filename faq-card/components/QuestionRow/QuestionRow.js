@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Image from 'next/image';
 import {
   QuestionRowWrapper,
   QuestionTitleWrapper,
@@ -17,10 +16,10 @@ const QuestionRow = ({ question }) => {
     <QuestionRowWrapper>
       <QuestionTitleWrapper active={active}>
         <h3>{question.question}</h3>
-        <Image
+        <img
           className={active && 'rotate'}
           onClick={collapseQuestion}
-          src="/images/icon-arrow-down.svg"
+          src="https://raw.githubusercontent.com/TiagoDiass/front-end-challenges/431c50b041c2ef6d65f9f2447dc5eaf5f5ff4d48/faq-card/public/images/icon-arrow-down.svg"
           width={20}
           height={3}
         />

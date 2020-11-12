@@ -20,7 +20,7 @@ export default function Home() {
           <FaqRightBlock>
             <img
               className="illustration-box"
-              src="/images/illustration-box-desktop.svg"
+              src="https://raw.githubusercontent.com/TiagoDiass/front-end-challenges/431c50b041c2ef6d65f9f2447dc5eaf5f5ff4d48/faq-card/public/images/illustration-box-desktop.svg"
             />
 
             <h1>FAQ | Frequently Asked Questions</h1>
