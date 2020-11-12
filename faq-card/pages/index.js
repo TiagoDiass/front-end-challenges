@@ -1,24 +1,31 @@
 import Head from 'next/head';
+import Image from 'next/image';
+import { QuestionsBlock } from '../components';
 import {
   FullPageContainer,
   FaqBlock,
   FaqLeftBlock,
   FaqRightBlock,
 } from '../pagesElements/Faq.elements';
+import questions from '../questionsAndAnswers';
 
 export default function Home() {
   return (
     <>
       <Head>
-        <title>FAQ</title>
+        <title>FAQ | Frequently Asked Questions</title>
       </Head>
       <FullPageContainer>
         <FaqBlock>
-          <FaqLeftBlock>
-            <h2>LEFT BLOCK</h2>
-          </FaqLeftBlock>
           <FaqRightBlock>
-            <h1>FAQ</h1>
+            <img
+              className="illustration-box"
+              src="/images/illustration-box-desktop.svg"
+            />
+
+            <h1>FAQ | Frequently Asked Questions</h1>
+
+            <QuestionsBlock questions={questions} />
           </FaqRightBlock>
         </FaqBlock>
       </FullPageContainer>
